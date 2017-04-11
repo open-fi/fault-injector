@@ -1,0 +1,13 @@
+build:
+	cd libopencm3
+	make
+	cd ..
+	make
+	make flash
+
+usage:
+	have a look at {reset,trigger,delay,injector}.py
+	reset.py	resets the dut
+	trigger.py	triggers the flash
+	delay.py	set the desired delay 16-bit unsigned integer
+	injector.py	you want to use this in your project
